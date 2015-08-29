@@ -1,0 +1,73 @@
+//.shadow {
+//  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+//}
+
+.buy-book {
+
+  &__title {
+    font-size: @font-size-title;
+    font-weight: bold;
+    line-height: 84px;
+    width: 941px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 60px;
+  }
+}
+
+.book-recommended {
+  text-align: center;
+  padding-top: 50px;
+
+
+  &__left-books {
+    display: inline-block;
+    width: 340px;
+    vertical-align: top;
+
+  }
+  &__center-books {
+    display: inline-block;
+    width: 510px;
+    vertical-align: top;
+
+    &-img {
+      box-shadow: 8px 8px 16px rgba(0,0,0,0.4);
+      width: 420px;
+      height: 600px;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    &-img::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 46px;
+      height: 48px;
+      background: url("@{img-path}/ribbon-red-big.png") no-repeat 20px -110%;
+      bottom:-38px;
+      left: 0;
+      z-index: -1;
+
+    }
+    &-summary {
+      font-size: @font-size-big-book;
+      color: @font-color-summary;
+      line-height: 34px;
+      padding: 50px 10px 0 10px;
+      width: 420px;
+      margin: 0 auto;
+    }
+
+  }
+  &__right-books {
+    display: inline-block;
+    width: 340px;
+    vertical-align: top;
+
+  }
+  &__side-content {
+
+  }
+}

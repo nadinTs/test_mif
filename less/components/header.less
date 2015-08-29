@@ -1,0 +1,29 @@
+.header {
+  padding-top: 60px;
+  .clearfix;
+
+  &__logo {
+   float: left;
+  }
+  &__logo-img {
+    width: 300px;
+
+  }
+  &__search {
+    float: right;
+    position: relative;
+  }
+  &__search-input {
+    width: 245px;
+    border-radius: 15px;
+    font-size: @font-size-search;
+    color: @font-color-search;
+    padding: 4px 0 4px 30px;
+    background: url("@{img-path}/loope.png") no-repeat 5px 50%;
+  }
+  &__search-enter {
+    position: absolute;
+    right: -20px;
+    top: 4px;
+  }
+}
