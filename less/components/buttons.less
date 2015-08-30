@@ -1,0 +1,48 @@
+.buy_button {
+  background-color: @bg-button-buy;
+  width: 440px;
+  height: 75px;
+  box-shadow: 0 20px 40px rgba(0,0,0,1);
+  color: @font-color-btn-buy;
+  font-size: @font-size-btn-buy;
+  line-height: 38px;
+  border-radius: 20px;
+  border: none;
+
+  &--through {
+    text-decoration: line-through;
+  }
+  &--wrap {
+    padding: 30px 0;
+  }
+
+  &:hover {
+    background: linear-gradient(to top, @gradient-bottom, @gradient-top);
+  }
+  &:active {
+    box-shadow: 0 5px 10px rgba(0,0,0,1);
+  }
+}
+
+.btn-else {
+  text-align: center;
+
+  &__input {
+    border-radius: 7px;
+    width: 280px;
+    height: 45px;
+    color: @font-color-link;
+    border-color: @font-color-link;
+    background-color: @font-color-btn-buy;
+    font-size: @font-size-btn-else;
+  }
+
+  &__input:hover,
+  &__input:active {
+    color: @font-color-link-hover;
+    border-color: @font-color-link-hover;
+
+  }
+
+}
+

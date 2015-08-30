@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" >
 </head>
 <body>
-<div class="wrap">
+<main class="wrap">
     <header class="header">
         <div class="header__logo">
             <a href="#x" ><img class="header__logo-img" src="img/logo.png"></a>
@@ -19,39 +19,219 @@
     <article>
         <section class="buy-book">
 
-            <div class="buy-book__title">Мы издаем книги — вы&nbsp;их можете не читать</div>
+            <div class="buy-book__title title">Мы издаем книги — вы&nbsp;их можете не читать</div>
 
             <div class="book-recommended">
                 <div class="book-recommended__left-books">
-                    <div  class="book-recommended__side-content">
-                        <img src="img/pic/pic_bender.png">
-                        <p>Эта книга доказывает ничтожность человеческой массы.</p>
+                    <div  class="side-content">
+                        <div class="side-content__img">
+                            <img src="img/pic/pic_bender.png">
+                        </div>
+                        <p class="quote">Эта книга доказывает ничтожность человеческой массы.</p>
                     </div>
-                    <div  class="book-recommended__side-content">
-                        <img src="img/pic/pic_zoidberg.png">
+                    <div  class="side-content">
+                        <div class="side-content__img">
+                            <img src="img/pic/pic_zoidberg.png">
+                        </div>
                         <p>В книге чувствуется безысходность и бесполезность</p>
                     </div>
                 </div>
-                <div class="book-recommended__center-books">
-                    <div class="book-recommended__center-books-img">
+                <div class="center-books">
+                    <div class="center-books__img">
                         <img  src="img/pic/book_history.jpg">
                     </div>
-                    <p class="book-recommended__center-books-summary">В топ-100 <span class="">Zoidberg</span>zon.com<br> в разделах «Это правда было так»<br> и «Когнитивный писсонанс»</p>
-                    <button>Купить за жалкие 1 999Z</button>
+                    <p class="center-books__summary">В топ-100 <span class="center-books--red">Zoidberg</span>zon.com<br> в разделах «Это правда было так»<br> и «Когнитивный писсонанс»</p>
+                    <div class="buy_button--wrap">
+                        <button class="buy_button">Купить за жалкие 1 999<span class="buy_button--through">Z</span></button>
+                    </div>
                 </div>
                 <div   class="book-recommended__right-books">
-                    <div class="book-recommended__side-content">
-                        <img src="img/pic/pic_bicod.png">
+                    <div class="side-content">
+                        <div class="side-content__img">
+                            <img src="img/pic/pic_bicod.png">
+                        </div>
                         <p>Книга неправильно переведена на двоичный код</p>
                     </div>
-                    <div  class="book-recommended__side-content">
-                        <img src="img/pic/pic_magnet.png">
+                    <div  class="side-content">
+                        <div class="side-content__img">
+                            <img src="img/pic/pic_magnet.png">
+                        </div>
                         <p>В каждой книге магнит, который вытягивает вашу мелочь</p>
                     </div>
                 </div>
             </div>
+            <div class="skruffi">
+                <div class="skruffi__text">
+                    Наши цены самые непредсказуемые и формируются нашим уборщиком Скраффи
+                </div>
+                    <img src="img/icon_skraffi.png">
+            </div>
+        </section>
+        <section class="bookmarks-wrap">
+            <div class="bookmarks-header">
+                <div class="title">
+                    Самое незаметное издательство
+                </div>
+                <div class="bookmarks-header__text">
+                    Перетаскивайте книги ниже с места на место. Это то, чем мы любим больше всего заниматься. Попробуйте, вам понравится.
+                </div>
+            </div>
+            <div class="bookmarks">
+                <div  class="bookmarks-content">
+                    <div class="bookmarks-content__img ribbon">
+                        <img src="img/pic/book_my-life.jpg">
+                    </div>
+                    <div class="bookmarks-content__text">
+                        <a href="#x" class="link-text">Краткая история почти ничего.</a>
+                        Эта книга — недоразуменье.
+                    </div>
+                </div>
+                <div  class="bookmarks-content">
+                    <div class="bookmarks-content__img">
+                        <img src="img/pic/book_space.jpg">
+                    </div>
+                    <div class="bookmarks-content__text">
+                        <a href="#x" class="link-text">Все знания о вселенной</a>
+                        компактно упакованы на одной странице.
+                    </div>
+                </div>
+                <div  class="bookmarks-content">
+                    <div class="bookmarks-content__img ribbon-grey">
+                        <img src="img/pic/book_great-bender.jpg">
+                    </div>
+                    <div class="bookmarks-content__text">
+                        Автор подробно, всего двумя фразами,
+                        <a href="#x" class="link-text">объясняет все.</a>
+                    </div>
+                </div>
+                <div  class="bookmarks-content">
+                    <div class="bookmarks-content__img ribbon-red">
+                        <img src="img/pic/book_soul-robots.jpg">
+                    </div>
+                    <div class="bookmarks-content__text">
+                        Двоичные
+                        <a href="#x" class="link-text">размышленияо жизни после пресса.</a>
+                    </div>
+                </div>
+                <div  class="bookmarks-content">
+                    <div class="bookmarks-content__img ribbon-grey">
+                        <img src="img/pic/book_transparent.jpg">
+                    </div>
+                    <div class="bookmarks-content__text">
+                        Прозрачные тексты на мутные темы.
+                    </div>
+                </div>
+                <div  class="bookmarks-content">
+                    <div class="bookmarks-content__img ribbon">
+                        <img src="img/pic/book_last-question.jpg">
+                    </div>
+                    <div class="bookmarks-content__text">
+                        О чем спросить первого встречного мутанта с другой планеты. Руководство по умиранию.
+                    </div>
+                </div>
+                <div  class="bookmarks-content">
+                    <div class="bookmarks-content__img ribbon-grey">
+                        <img src="img/pic/book_bender.jpg">
+                    </div>
+                    <div class="bookmarks-content__text">
+                        Технические чертежи и детали самого лучшего робота на свете.
+                    </div>
+                </div>
+                <div  class="bookmarks-content">
+                    <div class="bookmarks-content__img ribbon-red">
+                        <img src="img/pic/book_earthlings.jpg">
+                    </div>
+                    <div class="bookmarks-content__text">
+                        Коротко и ясно. Кому не ясно — Люрр объяснит. Коротко.
+                    </div>
+                </div>
+            </div>
+            <div class="btn-else">
+                <input  type="button" class="btn-else__input" value="Еще несколько книг">
+            </div>
         </section>
     </article>
-</div>
+    <article class="about-wrap">
+        <section>
+            <div class="about__header title">Вы работаете — мы отдыхаем</div>
+            <div class="about__header-text">
+                Мы не несем ответственность за изданные книги. Мы выбираем книги случайно и где попало. Наши любимые темы не определены, не глубоки и не интересны. Мы считаем, что краткость. Поэтому мы обходимся двумя словами, чтобы выразить все эмоции и донести смысл.
+            </div>
+
+            <section class="about-content">
+                <div class="about-content__title">История названия</div>
+                <div class="about-content__text">
+                    Название издательства «Фрай, без штанов и Бендер» является отсылкой к известному мировому издательству  XXI века <i>«Манн, Иванов и Фербер»</i>. После того как издательство смоделировало искусственный интеллект (вобравший в себя 25 триллионов изданных книг) и все ее сотрудники исчезли в Бесконечном Нейронном Пространстве межгалактический совет запретил издавать бумажные книги.
+                </div>
+            </section>
+            <div class="content__img">
+                <img src="img/ava-fray.png">
+                <img src="img/ava_bender.png">
+                <img src="img/ava_skaffi.png">
+                <img src="img/ava-slizen.png">
+                <img src="img/ava_kalkulon.png">
+                <img src="img/ava_zep.png">
+            </div>
+            <section class="about-content">
+                <div class="about-content__title">Основатели</div>
+                <div class="about-content__subtitle">Филип Джей Фрай</div>
+                <div class="about-content__text">
+                    В 1999 году Фрай встречался с девушкой по имени Мишель и работал курьером в «Пиццерии Пануччи». Жизнь у него пустая, его ничего не интересует, кроме, разве что игровых автоматов.
+                    Жил он, судя по всему, у Мишель. 31 декабря 1999 года Мишель отшила его, и ему надо было доставить пиццу в криогенную лабораторию. Однако только там он заметил, что это был розыгрыш. Он сидел один в пустом здании лаборатории и качался на стуле, поедая пиццу, когда часы пробили полночь, и в этот момент Фрай упал со стула и попал в криогенную капсулу, в которой был заморожен на 1000 лет и был разморожен только 31 декабря 2999 года.
+                    Позднее, в эпизоде «The Why of Fry», оказалось, что это Зубастик подтолкнул Фрая, чтобы он упал в криокамеру, для того чтобы Фрай спас вселенную в серии «The Day the Earth Stood Stupid». В этом же эпизоде выяснилось, что Фрая подтолкнул сам Фрай, из будущего. Причина — девушка: Зубастик заключает с Фраем сделку — Филип помогает защищать Вселенную от грозящих ей в XXXI веке опасностей, а зубастильонцы, в свою очередь, помогают ему добиться взаимности от Лилы.
+                </div>
+            </section>
+            <section class="about-content">
+                <div class="about-content__subtitle">Бендер Сгибатель Родригес великий, незаконнособранный</div>
+                <div class="about-content__text">
+                    Бендер Сгибатель Родригез, более известный как Бендер — один из главных персонажей «Футурамы». Он был сделан в Мексике (Тихуана) в 2997 году. Имеет серийный номер 2716057. Бендер пьет большое количество алкоголя, чтобы подзарядить свои топливные элементы. Когда он отрыгивает, из его рта выход огонь. Авантюрист, любит курить сигары. В настоящее время живет с Фраем в квартире.Stupid». В этом же эпизоде выяснилось, что Фрая подтолкнул сам Фрай, из будущего. Причина — девушка: Зубастик заключает с Фраем сделку — Филип помогает защищать Вселенную от грозящих ей в XXXI веке опасностей, а зубастильонцы, в свою очередь, помогают ему добиться взаимности от Лилы.
+                </div>
+            </section>
+            <section class="about-content co-worker">
+                <div class="about-content__title">Сотрудники</div>
+                <div class="about-content__subtitle">Скраффи Скраффингтон</div>
+                <div class="about-content__text">
+                    Скраффи Скраффингтон, или просто Скраффи — уборщик в компании «Планет Экспресс». О нём часто повторяют шутки про то, что он мало взаимодействует с остальным коллективом и многие его просто не помнят или никогда не видели раньше. Также, Скраффи является владельцем 40 тыс. акций «Планет Экспресса», и это больше, чем у остальных сотрудников, поскольку он «больше всех любит свою компанию» (по его словам).
+                    Скраффи ленив и его обычно можно увидеть в подвале здания штаб «Планет Экспресс», где он читает журнал «Zero-G Jugg» или «National Pornographic» (рус. «Нэшнл Порнографик»). Обычно о себе говорит в третьем лице.
+                </div>
+            </section>
+            <section class="joke">
+                <div class="joke__text">
+                    Сотрудники издательства были не раз замечены в провокациях и совершали бессмысленные действия
+                </div>
+            </section>
+            <section class="about-content co-worker">
+                <div class="about-content__subtitle">Ужасный студень</div>
+                <div class="about-content__text">
+                    Добродушный пришелец, но прибегает к насилию даже при малейшей провокации. Как правило глотает негодяя.
+                </div>
+            </section>
+            <section class="about-content co-worker">
+                <div class="about-content__subtitle">Калькулон</div>
+                <div class="about-content__text">
+                    Рекламное лицо компании.
+                </div>
+            </section>
+            <section class="about-content co-worker">
+                <div class="about-content__subtitle">Зепп Бранниган</div>
+                <div class="about-content__text">
+                    <p>Зепп Бранниган (англ. Zapp Brannigan, полное имя Уэбело Зепп Бранниган, англ. Webelo Zapp Brannigan) — персонаж, человек, капитан корабля Нимбус. Питает страстью к Лиле, но она не отвечает взаимностью. Имеет собственного помощника — Кифа. Часто заставляет его делать неприятную работу, например, почесать спинку, намылить Зеппу голову в душе и так далее. Занимает должность генерала в армии.</p>
+                    <p class="about-paragraph">Киф ненавидит Зеппа, но вынужден служить ему. Больше всего Киф ненавидит, когда Зепп его просит:
+                    </p>
+                    <ul class="about-list">
+                        <li>потереть спинку;</li>
+                        <li>подать свежее нижнее белье в душ;</li>
+                        <li>позвонить в службу доставки парфюма и угрозами об уничтожении  выпросить 99% скидку на любимые духи Зеппа;</li>
+                        <li>помыть посуду;</li>
+                        <li>передать вон той леди, как Зепп ее сильно желает.</li>
+                    </ul>
+
+                    <p class="about-paragraph">В остальном Киф доволен службой в Ограниченных Галактических Непобедимых войсках на должности помощника генерала.</p>
+                </div>
+            </section>
+        </section>
+    </article>
+
+</main>
 </body>
 </html>
