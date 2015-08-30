@@ -39,6 +39,7 @@
   display: inline-block;
   width: 510px;
   vertical-align: top;
+  position: relative;
 
   &__img {
     box-shadow: 8px 8px 16px rgba(0,0,0,0.4);
@@ -71,9 +72,11 @@
   &--red {
     color: @font-color-red;
   }
-
 }
 
+.animation:hover {
+  animation-play-state: paused;
+}
 .side-content {
   padding-top: 25px;
   color: @font-color-summary;

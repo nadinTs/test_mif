@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='app'>
 <head lang="en">
     <meta charset="UTF-8">
     <title>Bookmarks</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
 </head>
 <body>
 <main class="wrap">
@@ -36,9 +39,15 @@
                         <p>В книге чувствуется безысходность и бесполезность</p>
                     </div>
                 </div>
-                <div class="center-books">
+                <div class="center-books" ng-controller="ctrl-eye">
                     <div class="center-books__img">
                         <img  src="img/pic/book_history.jpg">
+                        <div class="eye" id="eye">
+                            <div class="eye__animation" id="js_eye">
+                                <div class="eye__tracker" id="js_eye-tracker"></div>
+                            </div>
+                        </div>
+
                     </div>
                     <p class="center-books__summary">В топ-100 <span class="center-books--red">Zoidberg</span>zon.com<br> в разделах «Это правда было так»<br> и «Когнитивный писсонанс»</p>
                     <div class="buy_button--wrap">
@@ -77,69 +86,69 @@
                 </div>
             </div>
             <div class="bookmarks">
-                <div  class="bookmarks-content">
+                <div  class="bookmarks-content" draggable="true">
                     <div class="bookmarks-content__img ribbon">
-                        <img src="img/pic/book_my-life.jpg">
+                        <a href="#"><img src="img/pic/book_my-life.jpg"></a>
                     </div>
                     <div class="bookmarks-content__text">
                         <a href="#x" class="link-text">Краткая история почти ничего.</a>
                         Эта книга — недоразуменье.
                     </div>
                 </div>
-                <div  class="bookmarks-content">
+                <div  class="bookmarks-content" draggable="true">
                     <div class="bookmarks-content__img">
-                        <img src="img/pic/book_space.jpg">
+                        <a href="#"><img src="img/pic/book_space.jpg"></a>
                     </div>
                     <div class="bookmarks-content__text">
                         <a href="#x" class="link-text">Все знания о вселенной</a>
                         компактно упакованы на одной странице.
                     </div>
                 </div>
-                <div  class="bookmarks-content">
+                <div  class="bookmarks-content" draggable="true">
                     <div class="bookmarks-content__img ribbon-grey">
-                        <img src="img/pic/book_great-bender.jpg">
+                        <a href="#"><img src="img/pic/book_great-bender.jpg"></a>
                     </div>
                     <div class="bookmarks-content__text">
                         Автор подробно, всего двумя фразами,
                         <a href="#x" class="link-text">объясняет все.</a>
                     </div>
                 </div>
-                <div  class="bookmarks-content">
+                <div  class="bookmarks-content" draggable="true">
                     <div class="bookmarks-content__img ribbon-red">
-                        <img src="img/pic/book_soul-robots.jpg">
+                        <a href="#"><img src="img/pic/book_soul-robots.jpg"></a>
                     </div>
                     <div class="bookmarks-content__text">
                         Двоичные
                         <a href="#x" class="link-text">размышленияо жизни после пресса.</a>
                     </div>
                 </div>
-                <div  class="bookmarks-content">
+                <div  class="bookmarks-content" draggable="true">
                     <div class="bookmarks-content__img ribbon-grey">
-                        <img src="img/pic/book_transparent.jpg">
+                        <a href="#"><img src="img/pic/book_transparent.jpg"></a>
                     </div>
                     <div class="bookmarks-content__text">
                         Прозрачные тексты на мутные темы.
                     </div>
                 </div>
-                <div  class="bookmarks-content">
+                <div  class="bookmarks-content" draggable="true">
                     <div class="bookmarks-content__img ribbon">
-                        <img src="img/pic/book_last-question.jpg">
+                        <a href="#"><img src="img/pic/book_last-question.jpg"></a>
                     </div>
                     <div class="bookmarks-content__text">
                         О чем спросить первого встречного мутанта с другой планеты. Руководство по умиранию.
                     </div>
                 </div>
-                <div  class="bookmarks-content">
+                <div  class="bookmarks-content" draggable="true">
                     <div class="bookmarks-content__img ribbon-grey">
-                        <img src="img/pic/book_bender.jpg">
+                        <a href="#"><img src="img/pic/book_bender.jpg"></a>
                     </div>
                     <div class="bookmarks-content__text">
                         Технические чертежи и детали самого лучшего робота на свете.
                     </div>
                 </div>
-                <div  class="bookmarks-content">
+                <div  class="bookmarks-content" draggable="false">
                     <div class="bookmarks-content__img ribbon-red">
-                        <img src="img/pic/book_earthlings.jpg">
+                        <a href="#"><img src="img/pic/book_earthlings.jpg"></a>
                     </div>
                     <div class="bookmarks-content__text">
                         Коротко и ясно. Кому не ясно — Люрр объяснит. Коротко.
@@ -231,6 +240,7 @@
             </section>
         </section>
     </article>
+
 
 </main>
 </body>
