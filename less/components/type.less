@@ -11,10 +11,11 @@ body {
 }
 
 .wrap {
-  width: 1200px;
+  max-width: 1305px;
+  min-width: 320px;
   margin: 0 auto;
+  padding: 0  2.5% 200px 2.5%;
   background: url("@{img-path}/footer_img.png") no-repeat 50% 100%;
-  padding-bottom: 200px;
 }
 
 
@@ -23,6 +24,10 @@ input,
 button, {
   margin: 0;
   padding: 0 ;
+}
+input:focus,
+button:focus{
+  outline: none;
 }
 
 ul, li {
@@ -39,6 +44,15 @@ ul, li {
 .link-text:hover {
   color: @font-color-link-hover;
 }
+
+
+@media (max-width: (@screen-lg)){
+  .wrap {
+    max-width: 700px;
+  }
+
+}
+
 
 
 

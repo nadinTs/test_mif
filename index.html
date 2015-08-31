@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html ng-app='app'>
+<html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bookmarks</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" >
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/script.js"></script>
 </head>
@@ -22,7 +22,7 @@
     <article>
         <section class="buy-book">
 
-            <div class="buy-book__title title">Мы издаем книги — вы&nbsp;их можете не читать</div>
+            <div class="buy-book__title title">Мы издаем книги — вы их можете не читать</div>
 
             <div class="book-recommended">
                 <div class="book-recommended__left-books">
@@ -39,7 +39,7 @@
                         <p>В книге чувствуется безысходность и бесполезность</p>
                     </div>
                 </div>
-                <div class="center-books" ng-controller="ctrl-eye">
+                <div class="center-books">
                     <div class="center-books__img">
                         <img  src="img/pic/book_history.jpg">
                         <div class="eye" id="eye">
@@ -50,9 +50,6 @@
 
                     </div>
                     <p class="center-books__summary">В топ-100 <span class="center-books--red">Zoidberg</span>zon.com<br> в разделах «Это правда было так»<br> и «Когнитивный писсонанс»</p>
-                    <div class="buy_button--wrap">
-                        <button class="buy_button">Купить за жалкие 1 999<span class="buy_button--through">Z</span></button>
-                    </div>
                 </div>
                 <div   class="book-recommended__right-books">
                     <div class="side-content">
@@ -70,10 +67,14 @@
                 </div>
             </div>
             <div class="skruffi">
+                <div class="buy_button--wrap">
+                    <button class="buy_button">Купить<span class="br_button-m"><br></span> за жалкие 1 999<span class="buy_button--through">Z</span></button>
+                </div>
                 <div class="skruffi__text">
                     Наши цены самые непредсказуемые и формируются нашим уборщиком Скраффи
                 </div>
                     <img src="img/icon_skraffi.png">
+
             </div>
         </section>
         <section class="bookmarks-wrap">
@@ -148,8 +149,7 @@
                 </div>
                 <div  class="bookmarks-content" draggable="false">
                     <div class="bookmarks-content__img ribbon-red">
-                        <a href="#"><img src="img/pic/book_earthlings.jpg"></a>
-                    </div>
+                        <a href="#"><img src="img/pic/book_earthlings.jpg"></a>                   </div>
                     <div class="bookmarks-content__text">
                         Коротко и ясно. Кому не ясно — Люрр объяснит. Коротко.
                     </div>

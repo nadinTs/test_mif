@@ -1,5 +1,5 @@
 .header {
-  padding-top: 60px;
+  padding: 60px 4% 0 2.5%;
   .clearfix;
 
   &__logo {
@@ -12,18 +12,47 @@
   &__search {
     float: right;
     position: relative;
+    width: 301px;
+    padding-top: 4px;
   }
   &__search-input {
     width: 245px;
     border-radius: 15px;
     font-size: @font-size-search;
     color: @font-color-search;
-    padding: 4px 0 4px 30px;
-    background: url("@{img-path}/loope.png") no-repeat 5px 50%;
+    padding: 5px 0 5px 32px;
+    background: url("@{img-path}/loope.png") no-repeat 6px 50%;
+    position: relative;
   }
   &__search-enter {
     position: absolute;
-    right: -20px;
-    top: 4px;
+    width: 14px;
+    right: 0;
+    top: 5px;
+  }
+}
+
+
+
+@media (max-width: (@screen-md)) {
+
+
+  .header {
+    max-width: 320px;
+    display: block;
+    margin: 0 auto;
+    padding: 40px 4% 0 2.5%;
+
+
+    &__logo {
+      float: none;
+      display: block;
+    }
+
+    &__search {
+      float: none;
+      display: block;
+      margin-top: 40px;
+    }
   }
 }

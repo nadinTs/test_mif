@@ -43,8 +43,6 @@
   &__animation {
     width: 140px;
     height: 140px;
-//    top: 25px;
-//    left: 25px;
     animation-name: eye;
     animation-duration: 1s;
     animation-delay: 1s;
@@ -61,5 +59,10 @@
     background: @font-color-about-title;
     border-radius: 50%;
 
+  }
+}
+@media (max-width: (@screen-md)) {
+  .eye {
+    display: none;
   }
 }

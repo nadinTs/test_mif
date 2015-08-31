@@ -8,6 +8,10 @@
   line-height: 38px;
   border-radius: 20px;
   border: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   &--through {
     text-decoration: line-through;
@@ -42,6 +46,22 @@
     color: @font-color-link-hover;
     border-color: @font-color-link-hover;
 
+  }
+
+}
+.br_button-m {
+  display: none;
+}
+
+@media (max-width: (@screen-md)) {
+
+  .buy_button {
+    width: 300px;
+    height: 115px;
+
+  }
+  .br_button-m {
+    display: inline;
   }
 
 }
