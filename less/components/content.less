@@ -18,7 +18,7 @@
 
 .book-recommended {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 35px;
 
 
   &__left-books {
@@ -39,6 +39,7 @@
 .center-books {
   display: inline-block;
   max-width: 510px;
+  min-width: 420px;
   vertical-align: top;
   position: relative;
   padding: 0 5%;
@@ -59,7 +60,7 @@
     height: 48px;
     background: url("@{img-path}/ribbon-red-big.png") no-repeat 0 0;
     bottom:-38px;
-    left: 20px;
+    left: 35px;
     z-index: -1;
 
   }
@@ -79,14 +80,21 @@
 
 
 .side-content {
-  padding-top: 25px;
   color: @font-color-summary;
   font-size: @font-size-side-content;
-  width: 260px;
+  line-height: 32px;
+  max-width: 310px;
+  min-width: 210px;
   margin: 0 auto;
+  padding-bottom: 60px;
 
+  & > p {
+    display: block;
+    width: 230px;
+    margin: 0 auto;
+  }
   &__img {
-    padding-bottom: 25px;
+    padding-bottom: 5px;
     width: 210px;
     margin: 0 auto;
   }
@@ -95,13 +103,15 @@
 .quote {
   position: relative;
 
+
   &::before {
     content: '';
     display: inline-block;
     position: absolute;
     width: 21px;
     height: 23px;
-    left: -15px;
+    left: -33px;
+    top: 4px;
     background: url("@{img-path}/quote_left.png") no-repeat left top;
   }
   &::after {
@@ -110,8 +120,8 @@
     position: absolute;
     width: 21px;
     height: 23px;
-    right: -15px;
-    background: url("@{img-path}/quote_right.png") no-repeat left top;
+    right: -33px;
+    background: url("@{img-path}/quote_right.png") no-repeat left 100%;
   }
 }
 
@@ -127,19 +137,17 @@
     font-size: @font-size-search;
     font-style: italic;
     line-height: 19px;
-    padding-bottom: 10px;
+    padding-bottom: 6px;
   }
 
 }
 
 .bookmarks-wrap {
-  padding-bottom: 100px;
-  padding-top: 100px;
-
+  padding: 72px 0;
 }
 
 .bookmarks-header {
-  padding-bottom: 15px;
+  padding-bottom: 4px;
   text-align: center;
 
   &__text {
@@ -149,19 +157,20 @@
     max-width: 880px;
     min-width: 320px;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 13px;
   }
 }
 
 
 .bookmarks {
   text-align: center;
+  padding-bottom: 8px;
 }
 
 .bookmarks-content {
   display: inline-block;
   vertical-align: top;
-  width: 295px;
+  width: 314px;
   padding: 35px 0;
 
   &__img {
@@ -207,7 +216,8 @@
   &__text {
     font-size: @font-size-book-text;
     color: @font-color-book-text;
-    padding: 30px 30px 0 30px;
+    line-height: 26px;
+    padding: 21px 20px 0 20px;
   }
 }
 
@@ -219,7 +229,7 @@
   padding-bottom: 50px;
 
   &__header {
-    padding-bottom: 50px;
+    padding-bottom: 13px;
   }
 
   &__header-text {
@@ -235,14 +245,15 @@
 .about-content {
   max-width: 640px;
   min-width: 320px;
-  padding-top: 50px;
   margin: 0 auto;
   text-align: left;
+
 
   &__title {
     font-size: @font-size-about-title;
     color: @font-color-about-title;
-    padding-bottom: 30px;
+    padding-top: 21px;
+    padding-bottom: 9px;
     font-weight: bold;
   }
   &__subtitle {
@@ -250,18 +261,30 @@
     color: @font-color-about-title;
     line-height: 32px;
     font-weight: bold;
-    padding-bottom: 30px;
+    padding-top: 13px;
+    padding-bottom: 10px;
+  }
+  &__name {
+    padding-bottom: 11px;
+    font-size: @font-size-big-book;
+    color: @font-color-about-title;
+    line-height: 32px;
+    font-weight: bold;
   }
   &__text {
     font-size: @font-size-book-text;
     color: @font-color-summary;
     line-height: 32px;
+
+    & > p {
+      padding-bottom: 16px;
+    }
   }
 }
 
 .content__img {
-  padding-bottom: 10px;
-  padding-top: 60px;
+  padding-top: 15px;
+  padding-bottom: 22px;
 
   & img {
     padding: 0 35px;
@@ -276,14 +299,14 @@
 .joke {
   border-top: 1px solid @color-line ;
   border-bottom: 1px solid @color-line ;
-  margin: 50px auto;
+  margin: 42px auto 26px auto;
   max-width: 880px;
   min-width: 320px;
   &__text {
     font-family: ALS Fuchsia;
     font-size: @font-size-joke;
     line-height: 54px;
-    padding: 50px 40px;
+    padding: 27px 40px 36px 40px;
   }
 }
 .about-paragraph {
@@ -293,6 +316,7 @@
 .about-list li {
   padding-left: 25px;
   position: relative;
+  padding-bottom: 16px;
 }
 .about-list li::before {
   content: '\2015' ;
@@ -302,6 +326,33 @@
 
 }
 
+.center-books--small{
+  display: none;
+}
+.center-books--big{
+  display: inline-block;
+}
+
+
+
+@media (max-width: (@screen-lg)) {
+  .center-books {
+    margin-top: 40px;
+  }
+
+  .center-books--small{
+    display: inline-block;
+  }
+  .center-books--big{
+    display: none;
+  }
+
+}
+
+
+
+
+
 @media (max-width: (@screen-md)) {
 
   .title {
@@ -310,12 +361,12 @@
   }
 
   .buy-book {
-    padding-top: 40px;
+    padding-top: 26px;
 
   }
 
   .book-recommended {
-    padding-top: 40px;
+    padding-top: 0;
 
     &__left-books {
       min-width: 320px;
@@ -328,8 +379,10 @@
   }
 
   .center-books {
-    max-width: 510px;
-    min-width: 320px;
+    max-width: 320px;
+    min-width: 280px;
+    margin-top: 32px;
+    padding: 0;
 
     &__img,
     &__img img {
@@ -350,13 +403,23 @@
     }
 
     &__summary {
-
-      padding: 50px 2.5% 0 2.5%;
-      max-width: 420px;
-      min-width: 320px;
+      padding: 21px 0 0 0;
+      max-width: 310px;
     }
   }
+  .side-content {
+    padding-bottom: 0;
+    padding-top: 53px;
 
+    & > p {
+      display: block;
+      width: 300px;
+      margin: 0 auto;
+    }
+    &__img {
+      padding-bottom: 5px;
+    }
+  }
   .bookmarks-header {
 
     &__text {
@@ -386,14 +449,54 @@
       line-height: 42px;
     }
   }
-}
+  .content__img {
+    padding-bottom: 22px;
+    padding-top: 0;
 
-@media (max-width: (@screen-lg)) {
-  .center-books {
-    margin-top: 40px;
+    & img {
+      padding: 0 15px 43px 0;
+      vertical-align: bottom;
+      display: inline-block;
+    }
+  }
+    .buy_button--wrap {
+      padding: 45px 0 25px 0;
+    }
+
+  .skruffi{
+
+    &__text {
+      color: @font-color-skruffi;
+      font-size: @font-size-search;
+      font-style: italic;
+      line-height: 19px;
+      padding-bottom: 6px;
+      width: 260px;
+      margin: 0 auto;
+    }
+
+  }
+  .bookmarks-wrap {
+    padding: 63px 0;
   }
 
+  .bookmarks-content {
+    padding: 28px 0;
+
+    &__text {
+      padding: 19px 20px 0 20px;
+    }
+  }
+
+  .about {
+    padding-bottom: 50px;
+
+    &__header {
+      padding: 0 7px 17px 7px;
+    }
+  }
 }
+
 
 
 
